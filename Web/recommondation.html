@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+        .form-wrapper {
+            background-color: #e3f2fd;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            margin-top: 50px;
+            border-radius: 15px;
+            padding: 30px;
+            background-color: #ffffff;
+        }
+        h1 {
+            color: #343a40;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: bolder;
+        }
+        label {
+            font-weight: bold;
+            color: #495057;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            font-weight: bold;
+            padding: 10px 20px;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-wrapper">
+        <div class="container">
+            <h1>Provide Your Details..</h1>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="gender">Gender:</label>
+                        <select id="gender" class="form-control">
+                            <option selected>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="partTimeJob">Part-Time Job:</label>
+                        <select id="partTimeJob" class="form-control">
+                            <option selected>Yes</option>
+                            <option>No</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="extracurricularActivities">Extracurricular Activities:</label>
+                        <select id="extracurricularActivities" class="form-control">
+                            <option selected>Yes</option>
+                            <option>No</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="absenceDays">Absence Days:</label>
+                        <input type="number" class="form-control" id="absenceDays" placeholder="Enter number of days">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="selfStudyHours">Weekly Self-Study Hours:</label>
+                        <input type="number" class="form-control" id="selfStudyHours" placeholder="Enter hours">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="mathScore">Math Score:</label>
+                        <input type="number" class="form-control" id="mathScore" placeholder="Enter score">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="historyScore">History Score:</label>
+                        <input type="number" class="form-control" id="historyScore" placeholder="Enter score">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="physicsScore">Physics Score:</label>
+                        <input type="number" class="form-control" id="physicsScore" placeholder="Enter score">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="chemistryScore">Chemistry Score:</label>
+                        <input type="number" class="form-control" id="chemistryScore" placeholder="Enter score">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="biologyScore">Biology Score:</label>
+                        <input type="number" class="form-control" id="biologyScore" placeholder="Enter score">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="englishScore">English Score:</label>
+                        <input type="number" class="form-control" id="englishScore" placeholder="Enter score">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="geographyScore">Geography Score:</label>
+                        <input type="number" class="form-control" id="geographyScore" placeholder="Enter score">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
