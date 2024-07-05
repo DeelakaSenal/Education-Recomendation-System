@@ -11,8 +11,8 @@ import numpy as np
 app = Flask(__name__)
 
 # Load the scaler, label encoder, model, and class names=====================
-scaler = pickle.load(open("Models/scaler.pkl", 'rb'))
-model = pickle.load(open("Models/model.pkl", 'rb'))
+scaler = pickle.load(open("models/scaler.pkl", 'rb'))
+model = pickle.load(open("models/model.pkl", 'rb'))
 class_names = ['Lawyer', 'Doctor', 'Government Officer', 'Artist', 'Unknown',
                'Software Engineer', 'Teacher', 'Business Owner', 'Scientist',
                'Banker', 'Writer', 'Accountant', 'Designer',
@@ -50,7 +50,7 @@ def Recommendations(gender, part_time_job, absence_days, extracurricular_activit
 
 @app.route('/')
 def home():
-    return render_template('home.html')
+    return render_template('index.html')
 
 @app.route('/recommend')
 def recommend():
@@ -80,7 +80,7 @@ def pred():
                                           total_score, average_score)
 
         return render_template('results.html', recommendations=recommendations)
-    return render_template('home.html')
+    return render_template('index.html')
 
 
 if __name__ == '__main__':
