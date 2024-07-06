@@ -50,11 +50,11 @@ def Recommendations(gender, part_time_job, absence_days, extracurricular_activit
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('home.html')
 
 @app.route('/recommend')
 def recommend():
-    return render_template('recommend.html')
+ return render_template('recommend.html')
 
 @app.route('/pred', methods=['POST','GET'])
 def pred():
@@ -78,9 +78,9 @@ def pred():
                                           weekly_self_study_hours, math_score, history_score, physics_score,
                                           chemistry_score, biology_score, english_score, geography_score,
                                           total_score, average_score)
-
+    
         return render_template('results.html', recommendations=recommendations)
-    return render_template('index.html')
+    return render_template('home.html')
 
 
 if __name__ == '__main__':
